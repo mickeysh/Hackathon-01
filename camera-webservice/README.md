@@ -5,9 +5,9 @@ Here is a Python webservice called webservice.py written for this event.  Google
 
 ### 1 - Setup the Raspberry Pi and take a photo
 1. Install required prerequisites:
-      1. Step I - Manual Installation using package managers:
+      1. **Step I** - Manual Installation using package managers:
           * Install `git` using package manager (hint: use `apt-get`)
-      2. Step II - Automatic installation using Ansible configuration manager:
+      2. **Step II** - Automatic installation using Ansible configuration manager:
           * Install Ansible on your laptop or on your raspberry-pi (Hint: Raspbian OS is built on Debian Jessie)
           * Clone the git repo from github (hint: use `git` :) )
           * Update the `hosts` file with your Raspberry host name

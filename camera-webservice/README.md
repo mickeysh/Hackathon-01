@@ -1,26 +1,25 @@
-#camera-webservice
+# camera-webservice
 
 ## Summary:
 Here is a Python webservice called webservice.py written for this event.  Google won't help you with any information specifically about the script, but you will find lots of information about the libraries used in the script.  Proceed in steps.
 
 ### 1 - Setup the Raspberry Pi and take a photo
 1. Install required prerequisites:
-    - There are two options to install the required prerequisites:
-      1. Manual Installation using package managers:
-          * OS Package dependencies (hint: use `apt-get`): `python-pip fswebcam git`
+      1. Step I - Manual Installation using package managers:
+          * Install git using package manager (hint: use `apt-get`)
           * Python module dependencies (hint: use `pip`): `flask flask-restful boto3 elasticsearch`
-      2. Automatic install using Ansible configuration manager:
-          * Install Ansible on your laptop or on your raspberry-pi (Hint: Raspberian is built on Debian Jessie)
+      2. Step II - Automatic installation using Ansible configuration manager:
+          * Install Ansible on your laptop or on your raspberry-pi (Hint: Raspberian OS is built on Debian Jessie)
+          * Clone the git repo from github (hint: use `git` :) )
           * Update the hosts file with your Raspberry host name
-          * Execute the playbook Package_dependencies.yml with the host file (ansible-playbook Package_dependencies.yml -i hosts --ask-pass)
-    - On Windows: Additionally the Python module `pillow` and the [CommandCam](https://batchloaf.wordpress.com/commandcam/) photo software placed in same directory as `webservice.py`
+          * Read through the Package_dependencies.yml file and try to understand what is the script doing
+          * Execute the playbook Package_dependencies.yml. Make sure you use our hosts file (hint: -i)
 2. Take a photo with `fswebcam` or `commandcam.exe`, transfer this to your laptop (`scp`, and maybe `winscp` are your friends), and verify the camera focus is good.  Repeat as necessary :-)
 
 ### 2- Setup the camera-webservice
-1. Clone the repo from github (hint: use `git`)
 1. Copy the camera-webserivce `config.json.example` to `config.json`
-1. Update all parameters to meet your needs
-1. For the `camera_command` parameter these might be helpful:
+2. Update all parameters to meet your needs
+3. For the `camera_command` parameter these might be helpful:
     * Example linux USB camera: `fswebcam -r 1280x720 --jpeg 85 --no-banner -S 20`
     * Example native raspberry camera module: `raspistill -o`
     * Example windows usb camera: `CommandCam.exe /quiet /filename`

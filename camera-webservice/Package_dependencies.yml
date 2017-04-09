@@ -1,0 +1,25 @@
+---
+- name: NetApp Hackathon | Volume I | Install Package Dependencies
+  hosts: raspberry-pi
+  tasks:
+    - name: Install Package Dependencies | play I | apt-get install package
+      apt:
+        name: "{{ item }}"
+        update_cache: yes
+        state: present
+      become: true
+      become_method: sudo
+      with_items:
+        - python-pip
+        - fswebcam
+        - git
+    - name: Install Package Dependencies | Play II | pip install package
+      pip:
+        name: "{{ item }}"
+      become: true
+      become_method: sudo
+      with_items:
+        - flask
+        - flask-restful
+        - boto3
+        - elasticsearch

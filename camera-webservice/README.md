@@ -5,7 +5,7 @@ Here is a Python webservice called webservice.py written for this event.  Google
 
 ### 1 - Setup the Raspberry Pi and take a photo
 1. Install required prerequisites:
-    - There are two options to intall the required prerequisites:
+    - There are two options to install the required prerequisites:
       1. Manual Installation using package managers:
           * OS Package dependencies (hint: use `apt-get`): `python-pip fswebcam git`
           * Python module dependencies (hint: use `pip`): `flask flask-restful boto3 elasticsearch`

@@ -1,8 +1,8 @@
-FROM ruby:alpine
-MAINTAINER Clemens Siebler <clemens.siebler@gmail.com>
+FROM ruby:2.2.4-alpine
+MAINTAINER Mickey Shaul <mickey.shaul@gmail.com>
 
 RUN apk add --update make gcc libc-dev
-RUN gem install sinatra shotgun unirest haml elasticsearch
+RUN gem install rest_client sinatra shotgun haml elasticsearch
 
 RUN mkdir /sinatra
 COPY / /sinatra/

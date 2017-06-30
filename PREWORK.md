@@ -86,3 +86,15 @@ There are many Docker tutorials on YouTube. I would recommend setting aside 1-2 
 
 ### Docker on RaspberryPI
 Docker enjoys only limited support on RaspberryPI. If you are interested in learning more, it is recommended you do your research prior to hack-night.   
+
+## Ansible
+Ansible is a radically simple IT automation system. It handles configuration-management, application deployment, cloud provisioning, ad-hoc task-execution, and multinode orchestration - including trivializing things like zero downtime rolling updates with load balancers.
+
+### Ansible Pre-Work (tutorial and installation)
+Read the installation guide: 
+http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-apt-debian
+If you have a linux machine or a Mac try installing it.
+
+Also read through the getting started guide and try to practice:
+http://docs.ansible.com/ansible/intro_getting_started.html
+

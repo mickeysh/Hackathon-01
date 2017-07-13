@@ -43,4 +43,3 @@ As with any tech challenge proceed in steps and verify all is well (including yo
 
 > Can you take photos from your camera using the webapp and see the results?  Yes, Success!
 
-### Data for the hack can be found at https://netapp-my.sharepoint.com/personal/mshaul_netapp_com/_layouts/15/guestaccess.aspx?docid=09d8e34271cd943d593c033a4a6b984a2&authkey=AYNThXzcYGhNH3o1MnWjI5E&expiration=2017-08-11T21%3a00%3a00.000Z

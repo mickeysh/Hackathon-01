@@ -27,11 +27,18 @@ As with any tech challenge proceed in steps and verify all is well (including yo
 ### Step I - Setup your infrastructure
 
 1. Build your Raspberry Pi and access it via SSH.  What linux does it run?  Is your internet access working?  Use `curl` to read `http://www.google.com`
-2. Setup your S3 bucket on the StorageGrid Webscale system:
+2. Setup your S3 bucket on the StorageGrid Webscale system (Choose either Novice or Advances level)
+  * Novice:
    * Install a S3 browser tool like "*S3 browser*" for Windows or "*CyberDuck*" for Mac
    * Create a bucket for your Pi using the credentials supplied; pick a bucket name that is unique for your team
    * Use your S3 client to put stuff in the bucket and get it out
    * Try to access the stuff in the bucket from your web browser. What URL would you use?  Do you get access denied?  
+      * Then set the [bucket_policy.json](bucket_policy.json) to allow anonymous `read` and `list` anonymous access to objects and try again.
+  * Advanced
+    * Install s3cmd or aws cli
+    * Use s3cmd or aws cli to create a bucket for your Pi using the credentials supplied; pick a bucket name that is unique for your team 
+    * Use s3cmd or aws cli to put stuff in the bucket and get it out
+    * Try to access the stuff in the bucket from your web browser. What URL would you use?  Do you get access denied?  
       * Then set the [bucket_policy.json](bucket_policy.json) to allow anonymous `read` and `list` anonymous access to objects and try again.
    * Note: CyberDuck won't allow you to set Bucket Policies, so you will have to do this another way. Ask your mentor if you can't google it :-) (Hint: s3cmd or aws cli)
 
@@ -42,7 +49,7 @@ As with any tech challenge proceed in steps and verify all is well (including yo
 1.  Find the steps here: [webapp/](webapp/)
 
 > Can you take photos from your camera using the webapp and see the results?  Yes, Success!
-### Step IV - Call your service from Twitter
+### Step IV - Call the camera service from Twitter
 1. Open/Login to your Twitter account (https://twitter.com/)
 2. Call your mentor for further instructions 
 

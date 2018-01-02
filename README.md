@@ -42,4 +42,8 @@ As with any tech challenge proceed in steps and verify all is well (including yo
 1.  Find the steps here: [webapp/](webapp/)
 
 > Can you take photos from your camera using the webapp and see the results?  Yes, Success!
+### Step IV - Call your service from Twitter
+1. Open/Login to your Twitter account (https://twitter.com/)
+2. Call your mentor for further instructions 
+
 

@@ -2,7 +2,7 @@ FROM ruby:2.2.4-alpine
 MAINTAINER Mickey Shaul <mickey.shaul@gmail.com>
 
 RUN apk add --update make gcc libc-dev build-base
-RUN gem install rest_client sinatra shotgun haml elasticsearch
+RUN gem install rest-client sinatra shotgun haml elasticsearch
 
 RUN mkdir /sinatra
 COPY / /sinatra/

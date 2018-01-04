@@ -13,7 +13,7 @@ Here is a Python webservice called webservice.py written for this event.  Google
       2. **Step II** - Automatic installation using Ansible configuration manager:
           * Install Ansible on your laptop or on your raspberry-pi (Hint: Raspbian OS is built on Debian Jessie)
           * Clone the git repo from github (hint: use `git` :) )
-          * Update the `hosts` file with your Raspberry host name
+          * Update the `hosts` file with your Raspberry ip address
           * Read through the Package_dependencies.yml file and try to understand what is the script doing
           * Execute the playbook Package_dependencies.yml. Make sure you use our `hosts` file (hint: -i)
 2. Take a photo with `fswebcam` and transfer this to your laptop (`scp` can be your best friend), and verify the camera focus is good.  Repeat as necessary :-)

@@ -25,8 +25,8 @@ The hack-night is intended to be a lightly structured event designed to allow ha
 As with any tech challenge proceed in steps and verify all is well (including your knowledge) before continuing.
 
 ### Step I - Setup your infrastructure   
-0. Edit /etc/resolve.conf and replace the exsisting DNS address to google DNS (8.8.8.8)
 1. Build your Raspberry Pi and access it via SSH.  What linux does it run?  Is your internet access working?  Use `curl` to read `http://www.google.com`
+    * Before you ping edit /etc/resolve.conf and replace the exsisting DNS address to google DNS (8.8.8.8)
 2. Setup your S3 bucket on the StorageGrid Webscale system (Choose either Novice or Advances level) - You can find the required host and credentials in the [hosts](hosts) file
   * **Novice**:
     * Install a S3 browser tool like "*S3 browser*" for Windows or "*CyberDuck*" for Mac

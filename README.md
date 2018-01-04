@@ -27,7 +27,7 @@ As with any tech challenge proceed in steps and verify all is well (including yo
 ### Step I - Setup your infrastructure
 
 1. Build your Raspberry Pi and access it via SSH.  What linux does it run?  Is your internet access working?  Use `curl` to read `http://www.google.com`
-2. Setup your S3 bucket on the StorageGrid Webscale system (Choose either Novice or Advances level) - You can find the required host and credentials here [hosts](hosts)
+2. Setup your S3 bucket on the StorageGrid Webscale system (Choose either Novice or Advances level) - You can find the required host and credentials in the [hosts](hosts) file
   * **Novice**:
     * Install a S3 browser tool like "*S3 browser*" for Windows or "*CyberDuck*" for Mac
     * Create a bucket for your Pi using the credentials supplied; pick a bucket name that is unique for your team

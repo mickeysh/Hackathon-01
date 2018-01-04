@@ -5,6 +5,8 @@ Here is a Python webservice called webservice.py written for this event.  Google
 
 ### 1 - Setup the Raspberry Pi and take a photo
 1. Install required prerequisites:
+      0. **Step 0** - Get DNS services
+          * edit /etc/resolve.conf and replace the exsisting DNS address to google DNS (8.8.8.8)
       1. **Step I** - Manual Installation using package managers:
           * Install `git` using package manager (hint: use `apt-get`)
       2. **Step II** - Automatic installation using Ansible configuration manager:
